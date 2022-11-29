@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/logo viñeta.png">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../images/captura 123_preview_rev_1.png" alt="logo just-it" height="65px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">JUST-IT</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Unidades de negocio</a> 
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="../pages/portfolio.html">Portfolio</a></li>
+                        <li><a class="dropdown-item" href="../pages/educacion.html">Educacion</a></li>
+                        <li><a class="dropdown-item" href="../pages/ofertas.html">Ofertas</a></li>
+                        <li><a class="dropdown-item" href="../pages/contactos.html">Contactos</a></li>
+                    </ul>
+
+                    
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+  
+  <main>
+    <div class="formContactos">
+      <fieldset>
+          <legend>Contáctenos</legend>
+          <form>
+            <ul class="formContactosLista">
+              <li><label for="Nombre y Apellido">Nombre y apellido:</label>
+              <input type="text" name="Nombre_apellido" required></li>  
+              <li><label for="Compañia">Compañia:</label>           
+              <input type="text" name="Compañia:" required></li>
+              <li><label for="Posicion">Posicion:</label>
+                  <select name="Posicion">
+                  <option value=""></option>
+                  <option value="PSM">PSM</option>
+                  <option value="PSS">PSS</option>
+                  <option value="Pre-venta">Pre-venta</option>
+                  <option value="CEO">CEO</option>
+                  <option value="CTO">CTO</option>
+                  <option value="Otros">Otros</option>
+              </select></li>
+              <li><label for="Email">Email:</label>
+              <input type="email" name="Email" required></li>  
+              <li><label for="Telefono">Telefono:</label>
+              <input type="number" name="Telefono" required></li>  
+              <li><label for="Pais">Pais:</label>
+              <input type="text" name="Pais"required></li>
+              <li><textarea name="En que lo podemos ayudar?" id="" cols="85" rows="15">En que lo podemos ayudar?:</textarea>
+              <input type="submit" value="Enviar formulario"/></li>
+            </ul>
+          </form>
+      </fieldset>
+  </div>
+  </main>
+  <script src="../Javascript/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Horarios de atencion: Lunes a Sábados 09:00 a 13:00 Hs - 15:30 s 19:30 Hs // Tel: 011-4451-0836 // Direccion: Belgrano 1143, Local 36 y 37, San Miguel BA. 
+  </div>
+</footer>
+</html>
