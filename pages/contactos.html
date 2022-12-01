@@ -49,40 +49,122 @@
         </div>
       </nav>
 </header>
-  
-  <main>
-    <div class="formContactos">
-      <fieldset>
-          <legend>Contáctenos</legend>
-          <form>
-            <ul class="formContactosLista">
-              <li><label for="Nombre y Apellido">Nombre y apellido:</label>
-              <input type="text" name="Nombre_apellido" required></li>  
-              <li><label for="Compañia">Compañia:</label>           
-              <input type="text" name="Compañia:" required></li>
-              <li><label for="Posicion">Posicion:</label>
-                  <select name="Posicion">
-                  <option value=""></option>
-                  <option value="PSM">PSM</option>
-                  <option value="PSS">PSS</option>
-                  <option value="Pre-venta">Pre-venta</option>
-                  <option value="CEO">CEO</option>
-                  <option value="CTO">CTO</option>
-                  <option value="Otros">Otros</option>
-              </select></li>
-              <li><label for="Email">Email:</label>
-              <input type="email" name="Email" required></li>  
-              <li><label for="Telefono">Telefono:</label>
-              <input type="number" name="Telefono" required></li>  
-              <li><label for="Pais">Pais:</label>
-              <input type="text" name="Pais"required></li>
-              <li><textarea name="En que lo podemos ayudar?" id="" cols="85" rows="15">En que lo podemos ayudar?:</textarea>
-              <input type="submit" value="Enviar formulario"/></li>
-            </ul>
-          </form>
-      </fieldset>
+
+<main>
+  <div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<legend class="tituloFormularioContacto">Contactenos Hoy !</legend>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="Nombre" class="form-control"  type="text">
+    </div>
   </div>
-  </main>
+</div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Apellido" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+      <div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="Telefono" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Direccion" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="Ciudad" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Codigo postal" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="Pais" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="yes" /> Es Reseler ?
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no" /> Es cliente final?
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        <textarea class="form-control" name="comment" placeholder="En que lo podemos ayudar ?"></textarea>
+  </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</main>
+
   <script src="../Javascript/bootstrap.bundle.min.js"></script>
 </body>
 <footer class="bg-light text-center text-lg-start">

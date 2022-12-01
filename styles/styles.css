@@ -233,7 +233,8 @@ button.learn-more {
   grid-template-rows: repeat(3, 250px);
   padding: 30px;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  min-height: 100vh; }
 
 .portfolioLogo:hover {
   background-color: #d6d1d1;
@@ -251,19 +252,25 @@ button.learn-more {
 @media (max-width: 650px) {
   .educacionArticle2 {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 10px; }
   .serviciosDescripcionTitulo {
     margin-top: 20px; }
   .educacionH6 {
     padding: 0px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px; }
+    margin-left: 25px;
+    margin-right: 25px; }
   .educacionH1 {
-    padding: 20px; } }
+    display: flex;
+    padding: 20px;
+    align-content: center;
+    justify-content: center; }
+  .articleButtonEducacion {
+    margin-top: 10px; } }
 
-@media (max-width: 980px) {
+@media (max-width: 1204px) {
   .serviciosBrindadosOfertas {
     display: flex;
     flex-wrap: wrap; }
@@ -271,8 +278,32 @@ button.learn-more {
     display: flex;
     flex-wrap: wrap;
     margin-left: 80px;
-    margin-top: 30px; }
+    margin-top: 50px;
+    margin-bottom: 50px; }
   .serviciosDescripcion {
     margin-bottom: 30px; }
   .serviciosDescripcionParrafo {
-    margin-bottom: 30px; } }
+    margin-bottom: 10px; }
+  .portfolioTabla {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    margin-top: 85px; }
+  .learn-more {
+    margin-top: 10px; } }
+
+.container {
+  margin-bottom: 50px; }
+
+.form-group {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 18px; }
+
+.tituloFormularioContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
